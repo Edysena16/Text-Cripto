@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextCript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+    <canvas id="canvas2">Canvas is not supported in your browser.</canvas>
+    <h1 class="title" id="main-title">Código Secreto</h1>
+
+    <main class="main">
+        <div class="form box">
+            <h2 id="first-msg">Digite sua mensagem:</h2>
+            <form action="">
+                <label for="input-text" id="sub-msg">Seu texto deve ser digitado em minúsculo. Não utilize numeros e caracteres especiais.</label>
+                <input class="text-input" type="text" name="input-text" id="input" placeholder="Digite seu texto aqui.">
+                <span id="error" class="invisible"></span>
+                <div class=buttons>
+                    <input class="btn" type="submit" value="Criptografar" id="btn-encrypt">
+                    <input class="btn" type="submit" value="Descriptografar" id="btn-decrypt">
+                </div>
+            </form>
+        </div>
+
+        <div class="msg box">
+            <h2 id="second-msg">Mensagem criptográfada:</h2>
+            <input class="text-input" type="text" id="output" readonly="readonly"></input>
+            <div class=buttons>
+                <input class="btn" type="submit" value="Copiar" id="btn-copy">
+            </div>
+        </div>
+
+    </main>
+    <script src="js/forms.js"></script>
+    <script src="js/validation-and-errors.js"></script>
+    <script src="js/buttons-functions.js"></script>
+    <script src="js/buttons.js"></script>
+
+    <footer>
+        <p>Copyright © 2022 Edvaldo Sena | Scearth v 1.0.0<br><hr>
+            Background by <a href="https://wallpaperaccess.com">WallpaperAcess</a></p>
+    </footer>
+</body>
+
+</html>
